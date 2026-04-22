@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications | RAKSHA YANTRA | HQ IDS</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ROOT VARIABLES
+   ============================================================ */
+:root {
+  --primary-transparant: rgba(47, 154, 255, 0.8);
+  --secondary-transparent: #3f9fc1c7;
+  --heighlight-clr: #bb9867;
+  --heighlight-transparant: rgba(235, 174, 66, 0.8);
+  --white: #ffffff;
+  --bg-white: #ffffff;
+  --body-fonts: #1c1c1c;
+  --body-font-regu: "Poppins", sans-serif;
+  --body-font-med: "Poppins", sans-serif;
+  --body-font-light: "Poppins", sans-serif;
+  --title-color: #111111;
+  --bg-blue: #dff1ff;
+  --bg-secondary: rgb(196 201 205 / 80%);
+  --quotation: #2c2c2c;
+  --secondary: #1489ff;
+  --primary: #900E65;
+  --bg-purple-primary: #67006c;
+  --bg-purple-light: #900E65;
+  --bg-purple-secondary: #6d0b45;
+  --bg-purple-third: #6d0b45;
+  --bg-blue-primary: #2f83c5;
+  --bg-purple-gradient: radial-gradient(circle, rgb(173 52 125) 41%, rgb(146 4 103) 59%);
+  --bg-dark-blue: #222689;
+  --bg-dark-yellow: #bd9d2a;
+  --bg-light-yellow: #ffd700;
+  --bg-dark-secondary: #1e98b6;
+  --bg-blue-gradient: radial-gradient(circle, rgba(6, 125, 182, 1) 38%, rgba(2, 80, 142, 1) 67%);
+  --heighlight-clr-v2: #a66f4a;
+  --hlclr-light-v2: #ffc9a4;
+  --bg-purpal-gradiant: linear-gradient(to right top, #6d0b45, #65093f, #5d073a, #560534, #4e042f);
+  --page-bg: #f5f3f7;
+  --card-bg: #ffffff;
+  --border-light: #e8dff0;
+  --text-muted-gov: #6b6070;
+  --accent-gold: #bd9d2a;
+  --section-stripe: #faf8fc;
+}
+
+/* ============================================================
+   GLOBAL RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  font-family: var(--body-font-regu);
+  background: var(--page-bg);
+  color: var(--body-fonts);
+  margin: 0;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.top-bar {
+  background: var(--bg-purple-light);
+  padding: 5px 0;
+}
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.govt-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.top-actions .top-btn {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--body-font-regu);
+}
+.top-actions .top-btn:hover { background: rgba(255,255,255,0.28); }
+.search-mini { display: flex; align-items: center; }
+.search-mini input {
+  height: 26px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  padding: 0 8px;
+  font-size: 11px;
+  width: 150px;
+  outline: none;
+}
+.search-mini button {
+  height: 26px;
+  background: #4a0d31;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* ============================================================
+   MAIN HEADER
+   ============================================================ */
+.main-header {
+  background: #fbebffcf;
+  border-bottom: 3px solid var(--primary);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(144,14,101,0.10);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.header-logo-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header-title-block { text-align: left; }
+.header-title-block h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #303030;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.12);
+}
+.header-title-block span {
+  font-size: 11px;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.header-logos-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.login-btn-header {
+  background: var(--primary);
+  color: #fff !important;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--body-font-regu);
+}
+.login-btn-header:hover { background: #6d0b45; }
+
+/* ============================================================
+   NAVIGATION BAR
+   ============================================================ */
+.govt-navbar {
+  background: var(--bg-purple-gradient);
+  box-shadow: 0 3px 8px rgba(144,14,101,0.18);
+}
+.govt-navbar .nav-link {
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  padding: 10px 18px !important;
+  position: relative;
+  transition: background 0.2s;
+}
+.govt-navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 0; height: 2px;
+  background: var(--accent-gold);
+  transition: all 0.25s;
+  transform: translateX(-50%);
+}
+.govt-navbar .nav-link:hover::after,
+.govt-navbar .nav-link.active::after { width: 70%; }
+.govt-navbar .dropdown-menu {
+  background: #7d0b52;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+  min-width: 210px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+.govt-navbar .dropdown-item {
+  color: #fff;
+  font-size: 12.5px;
+  padding: 9px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.15s;
+}
+.govt-navbar .dropdown-item:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.navbar-toggler { border-color: rgba(255,255,255,0.4); }
+.navbar-toggler-icon { filter: invert(1); }
+
+/* ============================================================
+   PAGE TITLE BANNER
+   ============================================================ */
+.page-title-banner {
+  background: var(--bg-purpal-gradiant);
+  padding: 40px 0 36px;
+  position: relative;
+  overflow: hidden;
+}
+.page-title-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2270%22 height=%2270%22><circle cx=%2235%22 cy=%2235%22 r=%221.8%22 fill=%22rgba(255,255,255,0.045)%22/></svg>') repeat;
+}
+.page-title-banner::after {
+  content: '';
+  position: absolute;
+  right: -60px; top: -60px;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  background: rgba(189,157,42,0.08);
+  pointer-events: none;
+}
+.page-title-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.page-title-left { display: flex; align-items: center; gap: 20px; }
+.page-title-icon {
+  width: 60px; height: 60px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: rgba(255,255,255,0.85);
+  flex-shrink: 0;
+}
+.page-title-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 6px;
+}
+.page-title-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+}
+.page-title-sub {
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.65);
+  margin-top: 6px;
+}
+.page-title-stats {
+  display: flex;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.pts-item {
+  text-align: center;
+  border-left: 1px solid rgba(255,255,255,0.12);
+  padding-left: 20px;
+}
+.pts-num {
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+.pts-num span { color: var(--accent-gold); }
+.pts-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-top: 4px;
+}
+
+/* ============================================================
+   BREADCRUMB STRIPE
+   ============================================================ */
+.breadcrumb-stripe {
+  background: #fff;
+  border-bottom: 1px solid var(--border-light);
+  padding: 7px 0;
+}
+.breadcrumb-stripe .breadcrumb {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted-gov);
+}
+.breadcrumb-item + .breadcrumb-item::before { color: var(--primary); }
+.breadcrumb-item.active { color: var(--primary); font-weight: 600; }
+
+/* ============================================================
+   PUBLICATIONS FILTER BAR
+   ============================================================ */
+.pub-filter-row {
+  background: #fff;
+  border-bottom: 1px solid var(--border-light);
+  padding: 14px 0;
+  position: sticky;
+  top: 77px;
+  z-index: 90;
+  box-shadow: 0 2px 8px rgba(144,14,101,0.04);
+}
+.pub-filter-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.pub-filter-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pft {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 6px 16px;
+  border-radius: 3px;
+  border: 1.5px solid var(--border-light);
+  background: var(--page-bg);
+  color: var(--text-muted-gov);
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.pft.active, .pft:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.pub-search-box {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--border-light);
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+}
+.pub-search-box input {
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-family: var(--body-font-regu);
+  width: 200px;
+  background: transparent;
+}
+.pub-search-box button {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  padding: 7px 13px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+.pub-search-box button:hover { background: #6d0b45; }
+.pub-count-label {
+  font-size: 11px;
+  color: var(--text-muted-gov);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.pub-count-label strong { color: var(--primary); }
+
+/* ============================================================
+   PUBLICATION CARDS — COVER + TITLE
+   ============================================================ */
+.pub-grid {
+  padding: 36px 0 60px;
+}
+
+.pub-book-card {
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.22s, transform 0.22s;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pub-book-card:hover {
+  box-shadow: 0 10px 32px rgba(144,14,101,0.14);
+  transform: translateY(-4px);
+}
+
+/* Cover image area */
+.pub-cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.pub-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.pub-book-card:hover .pub-cover-img {
+  transform: scale(1.04);
+}
+
+/* Colour-fill covers for publications without real images */
+.pub-cover-fill {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+.pub-book-card:hover .pub-cover-fill {
+  transform: scale(1.04);
+}
+.pub-cover-fill .cover-icon {
+  font-size: 42px;
+  opacity: 0.25;
+}
+.pub-cover-fill .cover-watermark {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+/* Badge overlay on cover */
+.pub-cover-badge {
+  position: absolute;
+  top: 10px; left: 10px;
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 2px;
+  color: #fff;
+}
+.pub-cover-year {
+  position: absolute;
+  bottom: 10px; right: 10px;
+  background: rgba(0,0,0,0.45);
+  color: rgba(255,255,255,0.88);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 2px;
+  backdrop-filter: blur(4px);
+}
+
+/* Title area below cover */
+.pub-book-title-wrap {
+  padding: 14px 14px 16px;
+  border-top: 2px solid var(--border-light);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pub-book-category {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+}
+.pub-book-name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.35;
+}
+.pub-book-card:hover .pub-book-name {
+  color: var(--primary);
+}
+
+/* ============================================================
+   SECTION LABEL / HEADING
+   ============================================================ */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+.section-label::before {
+  content: '';
+  width: 24px; height: 2px;
+  background: var(--accent-gold);
+}
+.section-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 0 4px;
+}
+.section-divider {
+  width: 40px; height: 3px;
+  background: var(--accent-gold);
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.gov-footer {
+  background: #1a0011;
+  color: rgba(255,255,255,0.85);
+  padding: 48px 0 0;
+}
+.footer-brand { margin-bottom: 20px; }
+.footer-brand h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 0 0 6px;
+}
+.footer-brand p { font-size: 12px; line-height: 1.6; opacity: 0.7; }
+.footer-heading {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 14px;
+}
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 8px; }
+.footer-links a {
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.footer-links a::before { content: '›'; color: var(--accent-gold); font-size: 14px; }
+.footer-links a:hover { color: #fff; }
+.footer-divider {
+  border-color: rgba(255,255,255,0.08);
+  margin: 32px 0 0;
+}
+.footer-bottom {
+  background: #110008;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.5);
+}
+.footer-bottom strong { color: rgba(255,255,255,0.8); }
+
+/* ============================================================
+   SKIP LINK
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  top: -40px; left: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 0 0 4px 0;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 991px) {
+  .page-title-stats { display: none; }
+  .page-title-text { font-size: 22px; }
+}
+@media (max-width: 767px) {
+  .header-title-block h1 { font-size: 16px; }
+  .pub-filter-row { position: static; }
+  .pub-book-name { font-size: 12.5px; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ═══════════════════════════════════════════════════
+     TOP BAR
+════════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container-fluid px-4">
+    <div class="top-bar-inner">
+      <div class="govt-brand">
+        <i class="fa fa-flag" style="color:rgba(255,255,255,0.7);"></i>
+        <span lang="hi">भारत सरकार</span>&nbsp;|&nbsp;Government of India
+      </div>
+      <div class="top-actions">
+        <div class="search-mini">
+          <input type="search" placeholder="Search here…" aria-label="Search">
+          <button aria-label="Search"><i class="fa fa-magnifying-glass"></i></button>
+        </div>
+        <button class="top-btn"><i class="fa fa-universal-access"></i> Accessibility</button>
+        <button class="top-btn"><i class="fa fa-turn-down"></i> Skip to Content</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN HEADER
+════════════════════════════════════════════════════ -->
+<header class="main-header">
+  <div class="container-fluid px-4">
+    <div class="header-inner">
+      <div class="header-logo-block">
+        <div style="width:52px;height:52px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;">
+          <i class="fa fa-shield-halved"></i>
+        </div>
+        <div class="header-title-block">
+          <h1>RAKSHA YANTRA</h1>
+          <span>Integrated Defence Staff · Ministry of Defence</span>
+        </div>
+      </div>
+      <div class="header-logos-right">
+        <div style="width:50px;height:50px;background:#f5edf8;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:18px;">
+          <i class="fa fa-star-and-crescent"></i>
+        </div>
+        <div style="width:50px;height:50px;background:#f5edf8;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent-gold);font-size:18px;">
+          <i class="fa fa-om"></i>
+        </div>
+        <button class="login-btn-header">LOGIN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════ -->
+<nav class="govt-navbar navbar navbar-expand-lg py-0">
+  <div class="container-fluid px-4">
+    <button class="navbar-toggler border-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#govNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="govNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="raksha_yantra.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">HQ IDS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vision and History</a></li>
+            <li><a class="dropdown-item" href="#">Leadership — RM</a></li>
+            <li><a class="dropdown-item" href="#">Leadership — CDS</a></li>
+            <li><a class="dropdown-item" href="#">Leadership — CISC</a></li>
+            <li><a class="dropdown-item" href="#">DCIDS(PP&amp;FD)</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Knowledge Base</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════
+     PAGE TITLE BANNER
+════════════════════════════════════════════════════ -->
+<div class="page-title-banner">
+  <div class="container-fluid px-4">
+    <div class="page-title-inner">
+      <div class="page-title-left">
+        <div class="page-title-icon">
+          <i class="fa fa-book-open"></i>
+        </div>
+        <div>
+          <div class="page-title-label">Knowledge Resources</div>
+          <h2 class="page-title-text">Publications</h2>
+          <div class="page-title-sub">Doctrines, policy papers, annual reports &amp; research studies from HQ Integrated Defence Staff</div>
+        </div>
+      </div>
+      <div class="page-title-stats">
+        <div class="pts-item">
+          <div class="pts-num">50<span>+</span></div>
+          <div class="pts-label">Documents</div>
+        </div>
+        <div class="pts-item">
+          <div class="pts-num">6</div>
+          <div class="pts-label">Categories</div>
+        </div>
+        <div class="pts-item">
+          <div class="pts-num">2025</div>
+          <div class="pts-label">Latest Year</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     BREADCRUMB
+════════════════════════════════════════════════════ -->
+<div class="breadcrumb-stripe">
+  <div class="container-fluid px-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="raksha_yantra.html"><i class="fa fa-house" style="color:var(--primary);font-size:10px;"></i> Home</a></li>
+        <li class="breadcrumb-item active">Publications</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     FILTER BAR
+════════════════════════════════════════════════════ -->
+<div class="pub-filter-row">
+  <div class="container-fluid px-4">
+    <div class="pub-filter-inner">
+      <div class="pub-filter-tabs">
+        <button class="pft active" data-cat="all">All</button>
+        <button class="pft" data-cat="doctrine">Doctrine &amp; Policy</button>
+        <button class="pft" data-cat="annual">Annual Reports</button>
+        <button class="pft" data-cat="research">Research Studies</button>
+        <button class="pft" data-cat="rti">RTI Documents</button>
+        <button class="pft" data-cat="joint">Joint Manuals</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <span class="pub-count-label">Showing <strong id="visibleCount">12</strong> of <strong>12</strong> publications</span>
+        <div class="pub-search-box">
+          <input type="text" id="pubSearch" placeholder="Search publications…">
+          <button><i class="fa fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════ -->
+<main id="main-content">
+<div class="pub-grid">
+  <div class="container-fluid px-4">
+
+    <!-- Row 1 -->
+    <div class="row g-4" id="pubGrid">
+
+      <!-- 1 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="doctrine" data-title="joint doctrine indian armed forces">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#4e042f 0%,#900E65 55%,#bd9d2a 100%);color:#fff;">
+              <i class="fa fa-shield-halved cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:var(--accent-gold);">Doctrine</span>
+            <span class="pub-cover-year">2025</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Doctrine &amp; Policy</div>
+            <div class="pub-book-name">Joint Doctrine of the Indian Armed Forces — 2025 Edition</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="annual" data-title="annual report 2024 25">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#222689 0%,#1489ff 60%,#1e98b6 100%);color:#fff;">
+              <i class="fa fa-chart-bar cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#1489ff;">Annual</span>
+            <span class="pub-cover-year">2024–25</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Annual Report</div>
+            <div class="pub-book-name">HQ IDS Annual Report 2024–25</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="research" data-title="emerging technology modern warfare">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#1a5e2a 0%,#2d9e4e 60%,#bd9d2a 100%);color:#fff;">
+              <i class="fa fa-microchip cover-icon"></i>
+              <div class="cover-watermark">CENJOWS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#2d9e4e;">Research</span>
+            <span class="pub-cover-year">2025</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Research Study</div>
+            <div class="pub-book-name">Emerging Technology in Modern Warfare</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="doctrine" data-title="joint logistics policy 2024">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#4e042f 0%,#7d0b52 50%,#900E65 100%);color:#fff;">
+              <i class="fa fa-truck cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:var(--primary);">Policy</span>
+            <span class="pub-cover-year">2024</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Policy Document</div>
+            <div class="pub-book-name">Joint Logistics Policy — Revised 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="rti" data-title="rti disclosure hq ids 2024">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#5a3e00 0%,#bd9d2a 80%,#d4b84a 100%);color:#fff;">
+              <i class="fa fa-folder-open cover-icon"></i>
+              <div class="cover-watermark">RTI</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#bd9d2a;">RTI</span>
+            <span class="pub-cover-year">2024</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">RTI Document</div>
+            <div class="pub-book-name">RTI Proactive Disclosure — HQ IDS 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="research" data-title="space cyber domain joint perspective">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#0d0030 0%,#3d0060 50%,#7b2ff7 100%);color:#fff;">
+              <i class="fa fa-satellite-dish cover-icon"></i>
+              <div class="cover-watermark">CENJOWS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#7b2ff7;">Research</span>
+            <span class="pub-cover-year">2024</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Research Study</div>
+            <div class="pub-book-name">Space &amp; Cyber Domain — Joint Perspective</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="joint" data-title="joint operations manual tri service">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#002244 0%,#004488 55%,#1489ff 100%);color:#fff;">
+              <i class="fa fa-book cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#004488;">Manual</span>
+            <span class="pub-cover-year">2024</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Joint Manual</div>
+            <div class="pub-book-name">Joint Operations Manual — Tri-Service Edition</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="annual" data-title="annual report 2023 24">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#1a2a60 0%,#222689 55%,#2f3eb5 100%);color:#fff;">
+              <i class="fa fa-chart-line cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#222689;">Annual</span>
+            <span class="pub-cover-year">2023–24</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Annual Report</div>
+            <div class="pub-book-name">HQ IDS Annual Report 2023–24</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="doctrine" data-title="defence planning guidelines india">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#6d0b45 0%,#900E65 50%,#c0246e 100%);color:#fff;">
+              <i class="fa fa-landmark cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#900E65;">Policy</span>
+            <span class="pub-cover-year">2023</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Doctrine &amp; Policy</div>
+            <div class="pub-book-name">Defence Planning Guidelines — Integrated Framework</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="research" data-title="theatre commands india feasibility study">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#3a2000 0%,#7a4500 55%,#bd7a2a 100%);color:#fff;">
+              <i class="fa fa-map cover-icon"></i>
+              <div class="cover-watermark">CENJOWS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#7a4500;">Research</span>
+            <span class="pub-cover-year">2023</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Research Study</div>
+            <div class="pub-book-name">Theatre Commands in India — A Feasibility Study</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="joint" data-title="joint intelligence doctrine surveillance reconnaissance">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#001a00 0%,#003300 50%,#006600 100%);color:#fff;">
+              <i class="fa fa-eye cover-icon"></i>
+              <div class="cover-watermark">HQ IDS</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#006600;">Manual</span>
+            <span class="pub-cover-year">2023</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">Joint Manual</div>
+            <div class="pub-book-name">Joint Intelligence, Surveillance &amp; Reconnaissance Doctrine</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="col-6 col-md-4 col-lg-2 pub-item" data-cat="rti" data-title="rti disclosure hq ids 2023">
+        <div class="pub-book-card">
+          <div class="pub-cover">
+            <div class="pub-cover-fill" style="background:linear-gradient(160deg,#3d3000 0%,#7a6000 55%,#b08c00 100%);color:#fff;">
+              <i class="fa fa-file-lines cover-icon"></i>
+              <div class="cover-watermark">RTI</div>
+            </div>
+            <span class="pub-cover-badge" style="background:#7a6000;">RTI</span>
+            <span class="pub-cover-year">2023</span>
+          </div>
+          <div class="pub-book-title-wrap">
+            <div class="pub-book-category">RTI Document</div>
+            <div class="pub-book-name">RTI Proactive Disclosure — HQ IDS 2023</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- Empty state -->
+    <div id="emptyState" style="display:none;text-align:center;padding:60px 20px;">
+      <i class="fa fa-file-circle-xmark" style="font-size:48px;color:var(--border-light);margin-bottom:16px;display:block;"></i>
+      <div style="font-size:15px;font-weight:700;color:#999;margin-bottom:6px;">No publications found</div>
+      <div style="font-size:12.5px;color:#bbb;">Try a different category or search term.</div>
+    </div>
+
+  </div>
+</div>
+</main>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+<footer class="gov-footer">
+  <div class="container-fluid px-4">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <h3>RAKSHA YANTRA</h3>
+          <p>HQ Integrated Defence Staff, Ministry of Defence, Government of India. Fostering jointness and integration among the Armed Forces of India.</p>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:16px;">
+          <div style="width:34px;height:34px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,0.7);cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='var(--primary)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'"><i class="fab fa-twitter"></i></div>
+          <div style="width:34px;height:34px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,0.7);cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='var(--primary)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'"><i class="fab fa-youtube"></i></div>
+          <div style="width:34px;height:34px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,0.7);cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='var(--primary)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'"><i class="fab fa-facebook-f"></i></div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="raksha_yantra.html">Home</a></li>
+          <li><a href="#">Vision &amp; History</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Resources</div>
+        <ul class="footer-links">
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="#">Policy Documents</a></li>
+          <li><a href="#">Annual Reports</a></li>
+          <li><a href="#">RTI Information</a></li>
+          <li><a href="#">Tenders</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Contact</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.65);line-height:2;">
+          <div><i class="fa fa-location-dot" style="color:var(--accent-gold);width:18px;"></i> HQ Integrated Defence Staff, New Delhi</div>
+          <div><i class="fa fa-envelope" style="color:var(--accent-gold);width:18px;"></i> contact@hqids.gov.in</div>
+          <div><i class="fa fa-phone" style="color:var(--accent-gold);width:18px;"></i> +91-11-XXXX XXXX</div>
+        </div>
+        <div style="margin-top:16px;padding:12px;border:1px solid rgba(255,255,255,0.1);border-radius:4px;font-size:11px;color:rgba(255,255,255,0.5);">
+          <strong style="color:rgba(255,255,255,0.7);display:block;margin-bottom:4px;">Technical Collaboration</strong>
+          BISAG-N · All rights reserved with HQ IDS
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid px-4">
+      <strong>RAKSHA YANTRA</strong> · HQ Integrated Defence Staff · Ministry of Defence, Government of India &nbsp;|&nbsp; Last Updated: April 2026 &nbsp;|&nbsp; Visitors: <strong>12,48,391</strong>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script>
+// Sticky header shadow
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.main-header');
+  header.style.boxShadow = window.scrollY > 10
+    ? '0 4px 20px rgba(144,14,101,0.18)'
+    : '0 2px 12px rgba(144,14,101,0.10)';
+});
+
+// Filter + Search
+const items    = document.querySelectorAll('.pub-item');
+const tabs     = document.querySelectorAll('.pft');
+const searchEl = document.getElementById('pubSearch');
+const countEl  = document.getElementById('visibleCount');
+const empty    = document.getElementById('emptyState');
+
+let activeCat = 'all';
+
+function applyFilters() {
+  const q = searchEl.value.toLowerCase().trim();
+  let visible = 0;
+  items.forEach(item => {
+    const catMatch = activeCat === 'all' || item.dataset.cat === activeCat;
+    const titleMatch = !q || item.dataset.title.includes(q);
+    const show = catMatch && titleMatch;
+    item.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  countEl.textContent = visible;
+  empty.style.display = visible === 0 ? 'block' : 'none';
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    activeCat = tab.dataset.cat;
+    applyFilters();
+  });
+});
+
+searchEl.addEventListener('input', applyFilters);
+</script>
+</body>
+</html>
